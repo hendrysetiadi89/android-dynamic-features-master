@@ -24,7 +24,7 @@ buildscript {
             'minSdk'            : 24,
             'targetSdk'         : 28,
             'kotlin'            : '1.3.31',
-            'playcore'          : '1.4.0',
+            'playcore'          : '1.5.0',
             'appcompat'         : '1.0.2',
             'espresso'          : '3.1.1',
             'extJunit'          : '1.1.0',
@@ -42,7 +42,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.0'
+        classpath 'com.android.tools.build:gradle:3.4.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 

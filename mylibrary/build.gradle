@@ -30,6 +30,9 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation project (":mylibrary2")
+    api "androidx.appcompat:appcompat:${versions.appcompat}"
+
+    api "com.google.android.play:core:${versions.playcore}"
 
 }
 repositories {
