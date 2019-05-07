@@ -37,6 +37,6 @@ dependencies {
 
     // When using API in base, some dependencies might have to be re-added for test implementation.
     androidTestImplementation "androidx.appcompat:appcompat:${versions.appcompat}"
-    implementation project (":mylibrary")
+    implementation project (":mylibrary3")
 
 }
