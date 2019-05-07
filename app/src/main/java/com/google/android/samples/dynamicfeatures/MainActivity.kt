@@ -307,12 +307,11 @@ class MainActivity : BaseSplitActivity() {
     private fun onSuccessfulLoad(moduleName: String, launch: Boolean) {
         if (launch) {
             when (moduleName) {
-//                moduleKotlin -> launchActivity(KOTLIN_SAMPLE_CLASSNAME)
+                // moduleKotlin -> launchActivity(KOTLIN_SAMPLE_CLASSNAME)
                 moduleKotlin ->
                 {
                     val intent = buildInternalUri(this, "tokopedia://marketplace/test")
-                    val manager = getPackageManager()
-                    val infos = manager.queryIntentActivities(intent, 0)
+                    val infos = getPackageManager().queryIntentActivities(intent, 0)
                     if (infos.size > 0) {
                         startActivity(Intent().apply {
                             setClassName(infos[0].activityInfo.packageName, infos[0].activityInfo.name);
