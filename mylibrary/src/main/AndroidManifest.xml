@@ -1,0 +1,21 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tokopedia.mylibrary" >
+    <application>
+        <activity
+            android:name=".TestActivity"
+            android:label="@string/testmodule">
+            <intent-filter
+                android:order="1">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+            <data
+                android:host="marketplace"
+                android:path="/test"
+                android:scheme="tokopedia" />
+        </intent-filter>
+        </activity>
+    </application>
+</manifest>
